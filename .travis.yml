@@ -9,4 +9,4 @@ before_install:
   - docker build -t shrikant9867/nodejs-prod -f Dockerfile.dev .
 
 script:
-  - docker run shrikant9867/nodejs-prod npm run test -- --coverage
+  - docker run -e CI=true shrikant9867/nodejs-prod npm run test -- --coverage
