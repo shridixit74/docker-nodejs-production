@@ -1,9 +1,12 @@
-sudo: required
+language: nodejs
+nodejs:
+  - "12.19.1"
+
 services:
   - docker
 
 before_install:
-  - docker build -t TESTDOCKER -f Dockerfile.dev .
+  - docker build -t shrikant9867/nodejs-prod -f Dockerfile.dev .
 
 script:
-  - docker run TESTDOCKER npm run test -- --coverage
+  - docker run shrikant9867/nodejs-prod npm run test -- --coverage
