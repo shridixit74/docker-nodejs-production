@@ -7,7 +7,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <h1> yoyoyoyoyoyoyoyoy.............................  </h1>
           Godzilla/////
 	  Dr. Dre and eminam .....
           Hello Nigga ............. Try this out ..
